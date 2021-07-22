@@ -1,0 +1,86 @@
+
+.likedWag,.likedWag:focus,.wagUser,.wagUser:focus{
+    border:none;
+    padding-left:5px;
+    padding-right:25px;
+    outline:none;
+    margin:25px;
+  
+}
+.wagUser,.wagUser:focus{
+    
+    font-size: 1.5em;
+}
+#wagdisplay{
+    display: flex;
+}
+
+.likedWag,.likedWag:focus{
+    border:none;
+    outline:none;
+    width:800px;
+    font-size: .9em;
+    align-items:center;
+   
+}
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding:0;
+  
+ 
+}
+li,a,a:visited,.navForm{
+    display:inline;
+     text-decoration: none;
+     color:black;
+     margin-right:10px;
+     align-content: center;
+}
+textarea{
+    resize:none;
+    width:25%;
+    height:15%;
+}
+
+td{
+    padding-right:20%;
+    padding-bottom:15px;
+    
+}
+.likebutton{
+    padding-left:0;
+    
+    
+}
+.like{
+    padding-right:0;
+    text-align:right;
+    padding-left: 20px;
+    
+   
+}
+a:hover{
+    color:blue;
+}
+img,.blank{
+   width:250px;
+}
+.changeProfileName{
+    display: block;
+    padding-top: 10px;
+}
+body{
+    background-color: #faf4e9;
+}
+
+tr{
+    background-color: white;
+    border:solid 1px black;
+    border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 5px 5px;
+  margin: 1vh;
+}
