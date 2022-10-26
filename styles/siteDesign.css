@@ -9,7 +9,7 @@
 }
 .wagUser,.wagUser:focus{
 
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 #wagdisplay{
     display: flex;
@@ -19,7 +19,7 @@
     border:none;
     outline:none;
     width:800px;
-    font-size: .9em;
+    font-size: 1.3em;
     align-items:center;
 
 }
@@ -71,7 +71,7 @@ img,.blank{
     padding-top: 10px;
 }
 body{
-    background-color: #purple;
+    background-color: darkseagreen;
 }
 
 tr{
