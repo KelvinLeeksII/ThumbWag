@@ -5,10 +5,10 @@
     padding-right:25px;
     outline:none;
     margin:25px;
-  
+
 }
 .wagUser,.wagUser:focus{
-    
+
     font-size: 1.5em;
 }
 #wagdisplay{
@@ -21,14 +21,14 @@
     width:800px;
     font-size: .9em;
     align-items:center;
-   
+
 }
 ul{
     list-style-type: none;
   margin: 0;
   padding:0;
-  
- 
+
+
 }
 li,a,a:visited,.navForm{
     display:inline;
@@ -46,19 +46,19 @@ textarea{
 td{
     padding-right:20%;
     padding-bottom:15px;
-    
+
 }
 .likebutton{
     padding-left:0;
-    
-    
+
+
 }
 .like{
     padding-right:0;
     text-align:right;
     padding-left: 20px;
-    
-   
+
+
 }
 a:hover{
     color:blue;
@@ -71,7 +71,7 @@ img,.blank{
     padding-top: 10px;
 }
 body{
-    background-color: #faf4e9;
+    background-color: #purple;
 }
 
 tr{
