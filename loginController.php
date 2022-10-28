@@ -68,10 +68,12 @@ if ($action == 'showLogin') {
     $usernameCheck = getUser($username);
     if($usernameCheck[0] === null){
         $passwordHash = password_hash($password, PASSWORD_BCRYPT);
+        $question1Hash = password_hash($question1, PASSWORD_BCRYPT);
         $answer1Hash = password_hash($answer1, PASSWORD_BCRYPT);
+        $question2Hash = password_hash($question2, PASSWORD_BCRYPT);
         $answer2Hash = password_hash($answer2, PASSWORD_BCRYPT);
 
-        createAccount($username, $passwordHash, $profileName,$answer1Hash, $answer2Hash);
+        createAccount($username, $passwordHash, $profileName,$question1Hash,$answer1Hash, $question2Hash, $answer2Hash);
         header("Location: ./index.php");
     }else{
         $error = "Username already taken.";

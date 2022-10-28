@@ -1,15 +1,17 @@
 <?php
 
-function createAccount($username, $password, $profileName, $answer1, $answer2) {
+function createAccount($username, $password, $profileName, $question1,$answer1,$question2 ,$answer2) {
     global $db;
 
-    $query = "INSERT INTO ACCOUNT (username, password, profileName,answer1,answer2) VALUES (:username, :password, :profileName,:answer1, :answer2)";
+    $query = "INSERT INTO ACCOUNT (username, password, profileName,recoveryQuestion1,answer1,recoveryQuestion2, answer2) VALUES (:username, :password, :profileName,:recoveryQuestion1, :answer1, :recoveryQuestion2, :answer2)";
     $statement = $db->prepare($query);
 
     $statement->bindValue(':username', $username);
     $statement->bindValue(':password', $password);
     $statement->bindValue(':profileName', $profileName);
+    $statement->bindValue(':recoveryQuestion1', $question1);
     $statement->bindValue(':answer1', $answer1);
+    $statement->bindValue(':recoveryQuestion2', $question2);
     $statement->bindValue(':answer2', $answer2);
 
     $statement->execute();
