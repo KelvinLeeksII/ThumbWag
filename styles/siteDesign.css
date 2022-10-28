@@ -75,9 +75,9 @@ body{
 }
 
 tr{
-    background-color: white;
-    border:solid 1px black;
-    border-radius: 25px;
+  background-color: white;
+  border:solid 1px black;
+  border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;

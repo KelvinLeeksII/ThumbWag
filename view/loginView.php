@@ -2,7 +2,7 @@
 <?php include "./view//header.php"; ?>
 <body>
     <?php include "./view/navigation.php"; ?>
-    
+
     <h1>Please Log In</h1>
     <form action="./loginController.php" method="post">
         <div id="data">
@@ -16,14 +16,12 @@
         </div>
         <div id="buttons">
             <label>&nbsp;</label>
-            <input type="submit" name = "button" value="Login"> 
+            <input type="submit" name = "button" value="Login">
             <input type="submit" name = "button" value="Make New Account"/>
-            <input type="submit" name ="button" value="Change Password"/>
+            <input type="submit" name ="button" value="Forgot Password"/>
         </div>
     </form>
-    
+
 </body>
 
 <?php include './view//footer.php'; ?>
-
-

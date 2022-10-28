@@ -1,14 +1,16 @@
 <?php
 
-function createAccount($username, $password, $profileName) {
+function createAccount($username, $password, $profileName, $answer1, $answer2) {
     global $db;
 
-    $query = "INSERT INTO ACCOUNT (username, password, profileName) VALUES (:username, :password, :profileName) ";
+    $query = "INSERT INTO ACCOUNT (username, password, profileName,answer1,answer2) VALUES (:username, :password, :profileName,:answer1, :answer2)";
     $statement = $db->prepare($query);
 
     $statement->bindValue(':username', $username);
     $statement->bindValue(':password', $password);
     $statement->bindValue(':profileName', $profileName);
+    $statement->bindValue(':answer1', $answer1);
+    $statement->bindValue(':answer2', $answer2);
 
     $statement->execute();
     $statement->closeCursor();
@@ -207,7 +209,7 @@ function changeProfileName($username, $profilename){
 
     $statement->execute();
     $statement->closeCursor();
-    
+
 }
 
 //helper methods
