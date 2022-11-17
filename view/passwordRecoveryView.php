@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<?php include "./view//header.php"; ?>
+<?php include "./view/header.php";
+  // $userQuestion1="";
+  // $userQuestion2="";?>
+
 <body>
     <?php include "./view/navigation.php"; ?>
 
     <h1>Please enter Username</h</h1>
-    <form action="./passwordrecoveryController.php" method="post">
+    <form action="./passwordRecoveryController.php" method="post">
         <div id="data">
             <label for ="currentUser">Username</label>
             <input type="text" name="currentUser">
@@ -17,8 +20,8 @@
         </div>
     </form>
 
-    <?php echo $userQuestion1
-          echo $userQuestion2
+    <?php echo $userQuestion1;
+          echo $userQuestion2;
           ?>
 
 </body>

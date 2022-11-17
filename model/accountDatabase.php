@@ -106,6 +106,18 @@ function getFollowerWags($username) {
     $statement->closeCursor();
     return $wags;
 }
+function getRecoveryInfo($currentUser){
+  global $db;
+
+  $query = "select recoveryQuestion1, recoveryQuestion2,answer1, answer2 from account where username = :username";
+  $statement = $db->prepare($query);
+
+  $statement->bindValue(':username', $currentUser);
+  $statement->execute();
+  $user = $statement->fetchAll();
+  $statement->closeCursor();
+  return $user;
+}
 
 function likeWag($currentUser, $wag, $wagUser) {
     //add like to table

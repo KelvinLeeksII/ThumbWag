@@ -54,7 +54,7 @@ if ($action == 'showLogin') {
     } else if ($button == 'Make New Account') {
         require("./view/createAccountView.php");
     }else if($button == 'Forgot Password'){
-        require("./view/passwordRecoveryView.php");
+        header("Location: ./passwordRecoveryController.php");
     }
 } else if ($action == "createAccount") {
     $username = filter_input(INPUT_POST, 'currentUser');
