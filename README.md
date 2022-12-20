@@ -1,4 +1,5 @@
-# finalProject
-Mock Twitter. Web sys dev final
+# Welcome to ThumbWag!
+The assignment was to make a mock twitter. Thus, ThumbWag was born! A silly social media site made using PHP and MySQL
 
-Made using PHP, HTML, and very little CSS
+I'm working on adding things slowly for practice.
+
